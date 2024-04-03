@@ -13,7 +13,7 @@ My major projects
 3. My own social network
 
 ## My favourite part of code
-^^^java
+```java
 
     double temp = -10.23;
 
@@ -29,4 +29,4 @@ My major projects
     else {
       System.out.println("You need cooling");
     }
-^^^
+```
