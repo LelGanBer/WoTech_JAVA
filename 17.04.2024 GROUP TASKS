@@ -1,0 +1,54 @@
+GROUP TASK:
+
+Easy -> Initialize a string array and try to input and output data
+     We want to define an array city names.
+     We want to add values to it (could be through the scanner, or just writing 
+
+arr[0] = "Riga";
+
+java
+arr[0] = scanner.nextLine();
+
+
+
+
+public class Main {
+  public static void main(String[] args) {
+
+  String [] arr = new String[5];
+  arr[0] = "Riga";
+  arr[1] = "Tallinn";
+  arr[2] = "Vilnius";
+  arr[3] = "Paris";
+  arr[4] = "Milan";
+
+  for(int i = 0; i < arr.length; i++) {
+      
+  System.out.println(arr[i]);
+    
+    } 
+  }
+}
+
+
+A step by step solution to the largest number (I will give hints only for largest number, but the solution for both are the same)
+
+    Define an int array that is x amounts large
+
+
+ 1.1. Put values in the array 
+
+    Define an int variable called maxNumber, this is where we store the value of largest number
+
+
+ 2.1. The value of maxNumber should be the first value of the array
+
+    Go through the array with a loop
+
+
+ 3.1. If the i number is bigger than the maxNumber, we need to change the value of maxNumber to i
+ 3.2. Repeat  3.1. on the next cycle until the end of the array
+
+    Print out - "Largest number of array is " + maxNumber
+
+    
