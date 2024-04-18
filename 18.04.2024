@@ -185,4 +185,28 @@ Result: 3
 Result: 3
 
 ["Oskars"] - An empty array
+
+Spoilers for DIFFICULT "maximum sum of two different numbers in array."
+
+Solution number one (nested for loops)
+
+    Define an array to store integers. 
+    Define a variable maxSum and initialize it as the sum of the first two numbers in the array. 
+     Start a loop to iterate over each element in the array: 
+    a.  Inside this loop, get the value of numbers[i]. 
+     Start another loop nested within the first loop: 
+    a.  Inside this nested loop, iterate over each element in the array again using a different index j. 
+    b.  Calculate the sum of numbers[i] and numbers[j]. 
+    c.  Compare this sum to maxSum. If it's greater than maxSum, update maxSum to this new sum. 
+    After both loops have finished iterating, print out the value of maxSum, which represents the maximum sum of two digits in the array. 
+
+
+
+Solution number two (find the 2 largest numbers in the array and then sum them together)
+
+     Set max1 and max2 to the smallest possible value. 
+     For each element in the array: 
+    a.   If the element is greater than max1, update max1 and max2 accordingly. 
+    b.  If the element is not greater than max1 but greater than max2, update max2. 
+     Return the sum of max1 and max2. 
 Result: 1
