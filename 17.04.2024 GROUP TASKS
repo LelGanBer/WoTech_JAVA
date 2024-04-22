@@ -108,4 +108,42 @@ public class Main {
     System.out.println("Largest number of array is " + maxNumber);
   }
 }
+
+OSKARS EXPLANATION HOW FOR LOOP WORKS IN THIS TASK:
+```java
+public class Main {
+  public static void main(String[] args) {
+
+    int[] numbers = new int[5];
+    numbers[0] = 1;
+    numbers[1] = 7;
+    numbers[2] = 3;
+    numbers[3] = -2;
+    numbers[4] = 100;
+
+    int maxNumber = numbers[0]; // maxNumber = 1
+
+    if (numbers[0] > maxNumber){ // If 1 > 1
+      maxNumber = numbers[0];
+    }
+
+    if (numbers[1] > maxNumber){ // If 7 > 1
+      maxNumber = numbers[1];
+    }
+
+    if(numbers[2] > maxNumber){ // If 3 > 7
+      maxNumber = numbers[2];
+    }
+
+    if(numbers[3] > maxNumber){// If -2 > 7
+      maxNumber = numbers[3];
+    }
+
+    if(numbers[4] > maxNumber){ // If 100 > 7
+      maxNumber = numbers[4];
+    }
+
+    System.out.println("Largest number of array is " + maxNumber);
     
+  }
+}
