@@ -34,6 +34,17 @@ public class Main {
  ```java
 
 
+PAR METHODS NO ALEX LEE VIDEO:
+
+public class Main{
+  public static void main(String[] args){
+
+    int a = 5;
+    int b = 10;
+    System.out.println(a*b);
+
+
+
 -Access modifiers:
 //public
 //private
@@ -141,3 +152,7 @@ WoTech and Java is easy
 =======================
 
 I have been learning Java for 6 weeks now.
+
+
+
+ALEX LE VIDEO ABOUT THIS THEME:  https://www.youtube.com/watch?v=cCgOESMQe44
