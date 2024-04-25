@@ -139,6 +139,27 @@ User inputs 5
 User inputs 6
 Result: 11
 
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner myScan = new Scanner(System.in);
+        System.out.println("Enter number 1: ");
+        int number1 = myScan.nextInt();
+        System.out.println("Enter number 2: ");
+        int number2 = myScan.nextInt();
+        int sum = Sum(number1, number2);
+        System.out.println("Sum of " + number1 + " and " + number2 + " is " + sum);
+    }
+
+    public static int Sum(int number1, int number2) {
+        return number1 + number2;
+    }
+}
+```
+
 Hard:
 1. Create a program, where user can provide a title and a small text below the story.
 Title should be wrapped with ====== at top and bottom, based on the title length.
