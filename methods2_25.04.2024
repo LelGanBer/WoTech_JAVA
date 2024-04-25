@@ -67,3 +67,103 @@ public class Main {
     return a + b + c;
   }
 }
+
+GROUP TASK1
+Create a function that returns smallest number of 2 numbers.
+For example:
+User provides 5
+User provides 7
+Function returns 5
+Main function prints out:
+5 is the smallest number
+
+```java
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the first number: ");
+    
+  int number1 = sc.nextInt();
+    System.out.println("Enter the second number: ");
+  int number2 = sc.nextInt();
+ 
+ 
+  int result = smaller(number1, number2); 
+    System.out.println(result);
+  }
+      
+  
+  public static int smaller(int a, int b){
+    if(a < b){
+      return a;
+  }
+    else{
+      return b;
+  }
+
+}
+  }
+```
+
+GROUP TASK2
+
+Create a function that returns a multiplication of 3 different numbers
+For example: 
+User provides 5
+User provides 7
+User provides 3
+Function returns 105
+Main function prints out 105
+
+```java
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the first number : ");
+    int number1 = sc.nextInt();
+    System.out.println("Enter the second number :");
+    int number2 = sc.nextInt();
+    System.out.println("Enter the third number :");
+    int number3 = sc.nextInt();
+
+    int result = multiplication(number1, number2, number3);
+    System.out.println(result);
+   
+  }
+  public static int multiplication(int a, int b, int c){
+    return a * b * c;
+  }
+  }
+```
+
+GROUP TASK3
+Create a function that returns a combination of first name and last name
+User provides "Oskars"
+User provides "Klaumanis"
+Function receives both of the names and returns "Oskars Klaumanis"
+Main function prints out the result
+
+```java
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Please enter first name:");
+      String firstName = sc.nextLine();  
+    System.out.println("Please enter last name:");
+      String lastName = sc.nextLine();
+
+    String fullName = fullName(firstName, lastName);
+    System.out.println("Your full name is: " + fullName);
+    
+    }
+  public static String fullName(String a, String b){
+    return a + " " + b;
+  }
+  }
+
