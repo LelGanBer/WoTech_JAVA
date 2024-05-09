@@ -1,0 +1,173 @@
+YOU CAN WRITE IT LIKE THIS:
+        int[][] array = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+OR LIKE THIS:
+         int[][] array = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+
+int[] oneDimensionalArray = {1, 2, 3};
+        
+        for(int i = 0; i < oneDimensionalArray.length; i++){
+            System.out.print(oneDimensionalArray[i]);
+        }
+
+public class Main {
+  public static void main(String[] args) {
+
+    int[] array = {1, 2, 3};
+    int[][] array2D = {
+      {1, 2, 3},
+      {4, 5, 6},
+      {7, 8, 9}
+    };
+
+    // iterating through 1D array
+    for (int i = 0; i < array.length; i++) {
+      System.out.println(array[i]);
+    }
+
+    // iterating through 2D array
+    for (int i = 0; i < array2D.length; i++) {
+      for( int j = 0; j < array2D[i].length; j++) {
+      System.out.println(array2D[i][j]);
+      }
+    }
+
+    
+  }
+
+}
+   
+   int[][] array = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        for(int i = 0; i < array.length; i++){
+            //array[0] = {1, 2, 3}
+            //array[0].length = 3
+            int[] row = array[i]; // {1, 2, 3} OR {4, 5, 6} OR, {7, 8, 9}
+            for(int j = 0; j < row.length; j++){
+                System.out.print(row[j]);
+            }
+
+
+            
+        }  
+
+
+// Made this to print out as
+// a grid
+public class Main{
+  public static void main (String[] args) {
+    
+    int[][] arr = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };   
+    
+
+    System.out.println("Original Array:");
+    
+    for(int i = 0; i < arr. length; i++){
+      for(int j = 0; j < arr[i].length; j++){
+        System.out.print(arr[i][j] + " ");
+      }
+    System.out.println();
+    }
+  }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        int[][] array = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        for(int i = 0; i < array.length; i++){ 
+            //array[0] = {1, 2, 3}
+            //array[0].length = 3
+            int[] row = array[i]; // {1, 2, 3} OR {4, 5, 6} OR, {7, 8, 9}
+            for(int j = 0; j < row.length; j++){
+                System.out.print(row[j]); //PROCESSING ROWS HERE
+            }
+            System.out.println();
+
+            
+        }  
+    }
+}
+
+public class Main{
+  public static void main (String[] args) {
+    
+    int[][] arr = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };   
+    
+    System.out.println("Game Grid :");
+    
+    for(int i = 0; i < arr. length; i++){
+      for(int j = 0; j < arr[i].length; j++){
+        System.out.print(arr[i][j] + "|");
+      }
+    System.out.println();
+    System.out.println("------");
+    }
+  }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        int[][] array = new int[5][5];
+
+        for (int i = 0; i < array.length; i++) {
+            int[] row = array[i];
+            for (int j = 0; j < row.length; j++) {
+                row[j] = 1;
+            }
+        }
+
+        for(int i = 0; i < array.length; i++){
+            for(int j = 0; j < array[i].length; j++){
+                System.out.print(array[i][j] + "|");
+            }
+            System.out.println();
+            System.out.println("----------");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        int[][] array = new int[10][10];
+
+        for (int i = 0; i < array.length; i++) {
+            int[] row = array[i];
+            for (int j = 0; j < row.length; j++) {
+                row[j] = i*j;
+            }
+        }
+
+        for(int i = 0; i < array.length; i++){
+            for(int j = 0; j < array[i].length; j++){
+                if(array[i][j] < 10){
+                    System.out.print(array[i][j] + "  ");
+                }
+                else{
+                    System.out.print(array[i][j] + " ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
